@@ -9,6 +9,7 @@ function Main() {
           Bem-vindo ao Guia Floripa! Aqui você encontrará informações sobre os
           melhores lugares para visitar em Florianópolis.
         </p>
+        <button>Descubra mais</button>
       </div>
     </main>
   );
