@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   overflow: hidden;
+}
+
+.container1 {
+  background-image: url("../../assets/imgs/imgcerta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
