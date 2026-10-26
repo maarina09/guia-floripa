@@ -28,6 +28,8 @@ h1 {
   font-family: "Shrikhand", serif;
   cursor: default;
   user-select: none;
+  margin-bottom: 20px;
+  margin-left: 26px;
 }
 
 .prompt-thin {
@@ -40,7 +42,7 @@ p {
   color: rgba(255, 255, 255, 0.671);
   margin-left: 25px;
   margin-top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 26px;
   max-width: 600px;
   font-size: 16px;
   font-family: "Prompt", sans-serif;
@@ -49,11 +51,18 @@ p {
 }
 
 button {
-  background-color: rgba(255, 255, 255, 0.671);
-  color: #000;
-  border: solid 1px #000;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: solid 0.5px #ffffff8e;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 25px;
 }
+
+button:hover {
+  background-color: #20afdb5b;
+  color: rgba(255, 255, 255, 0.671);
+}
+
