@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.gf{
+  --navy:#09768a; --ink:#06404d; --soft:#8cd3e2; --sky:#4acde4; --sea:#0191ac; --lagoon:#116264;
+  --bg:#f1fafb; --surface:#ffffff; --chip:#d6eff3; --text:#06404d; --muted:#456872; --sand:#c9eef5; --link:#08728a;
+  background:var(--bg); color:var(--text);
+  font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.5;
+}
+.gf *,.gf *::before,.gf *::after{box-sizing:border-box}
+.gf a{color:inherit;text-decoration:none}
+.gf button{font:inherit;cursor:pointer;border:0}
+.gf :focus-visible{outline:3px solid var(--sea);outline-offset:2px}
+.gf .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+.gf header{background:linear-gradient(90deg,#4acde4,#8cd3e2);color:var(--ink)}
+.gf header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.gf .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.4rem}
+.gf nav{display:flex;align-items:center;gap:28px}
+.gf nav a{font-size:1rem}
+.gf .btn{background:var(--navy);color:#fff;font-weight:700;border-radius:999px;padding:12px 24px}
+.gf .btn:hover{filter:brightness(1.06)}
+
+.gf .filters{display:flex;gap:10px;flex-wrap:wrap;background:var(--surface);border-radius:24px;box-shadow:0 6px 24px rgba(11,43,59,.12);padding:14px 18px;margin:32px 0 0}
+.gf .chip{background:var(--chip);color:var(--text);border-radius:999px;padding:12px 24px;font-weight:500}
+.gf .chip[aria-pressed="true"]{background:var(--navy);color:#fff}
+
+.gf .sec-head{display:flex;justify-content:space-between;align-items:baseline;margin:56px 0 22px}
+.gf .sec-head h2{margin:0;font-size:2rem;letter-spacing:-.01em}
+.gf .sec-head a{color:var(--link);font-weight:700}
+.gf .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;padding-bottom:64px}
+.gf .card{background:var(--surface);border-radius:24px;overflow:hidden;box-shadow:0 6px 22px rgba(11,43,59,.12);display:flex;flex-direction:column}
+.gf .thumb{position:relative;height:160px}
+.gf .thumb svg{display:block;width:100%;height:100%}
+.gf .tag{position:absolute;left:12px;top:12px;background:#fff;color:var(--navy);font-weight:700;font-size:.8rem;border-radius:999px;padding:4px 12px}
+.gf .fav{position:absolute;right:12px;top:12px;width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.gf .fav svg{width:20px;height:20px;fill:none;stroke:var(--navy);stroke-width:2}
+.gf .fav[aria-pressed="true"] svg{fill:#e0523a;stroke:#e0523a}
+.gf .card-body{padding:20px 22px 24px}
+.gf .card-body h3{margin:0 0 6px;font-size:1.3rem;line-height:1.2}
+.gf .card-body p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.gf .card-body a{color:var(--link);font-weight:700}
+.gf .empty{grid-column:1/-1;padding:32px;text-align:center;color:var(--muted);background:var(--chip);border-radius:24px}
+
+.gf .rain{background:var(--sand);padding:56px 0}
+.gf .rain .wrap{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center}
+.gf .rain h2{font-size:2.3rem;line-height:1.1;margin:0 0 14px;letter-spacing:-.01em}
+.gf .rain p{color:var(--muted);margin:0;max-width:34ch}
+.gf .rain-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gf .rain-card{background:var(--surface);border-radius:22px;padding:26px 24px;box-shadow:0 6px 22px rgba(11,43,59,.1)}
+.gf .ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;margin-bottom:22px}
+.gf .ico svg{width:28px;height:28px;fill:none;stroke:var(--navy);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.gf .rain-card h3{margin:0;font-size:1.2rem;line-height:1.25}
+
+.gf footer{background:linear-gradient(90deg,#4acde4,#8cd3e2);color:var(--ink);padding:36px 0}
+.gf footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.gf footer strong{font-size:1.4rem}
+.gf footer p{margin:4px 0 0;color:var(--ink)}
+
+@media (max-width:860px){
+  .gf nav a:not(.btn){display:none}
+  .gf .rain .wrap{grid-template-columns:1fr}
+  .gf .rain-cards{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.gf *{transition:none!important}}
